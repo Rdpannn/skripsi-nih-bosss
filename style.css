@@ -554,3 +554,53 @@ input[type="radio"] {
   margin: 0;
   transform: translateY(0); /* matiin geser 1px yang sebelumnya */
 }
+
+/* ===== Quality-of-life for long verification tables ===== */
+
+/* bikin tabel lebih enak dibaca */
+tbody tr:hover td {
+  background: #fafafa;
+}
+
+/* rapihin list di dalam tabel biar nggak makan tempat */
+td ul,
+td ol {
+  margin-top: 6px;
+}
+td li {
+  margin: 3px 0;
+}
+
+/* supaya tabel panjang gak meledak di mobile */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 14px;
+}
+
+/* (opsional) sticky header buat tabel panjang */
+@media (min-width: 901px) {
+  table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+}
+
+/* bikin checkbox/radio label konsisten di tabel */
+table label {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  line-height: 1.25;
+}
+
+/* kurangi “inline style dependency” */
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
