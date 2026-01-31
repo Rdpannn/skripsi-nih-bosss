@@ -1,0 +1,556 @@
+:root {
+  --bg: #ffffff;
+  --ink: #111827;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --soft: #f9fafb;
+  --chip: #f3f4f6;
+  --accent: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font:
+    14px/1.55 ui-sans-serif,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    "Noto Sans",
+    "Liberation Sans",
+    sans-serif;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 0 20px 48px;
+}
+
+.header {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 18px 14px;
+  background: linear-gradient(180deg, var(--soft), #fff);
+}
+
+.title {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+
+.sub {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  max-width: 780px;
+}
+
+.meta {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.meta .box {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: #fff;
+  min-height: 58px;
+}
+
+.k {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 0 0 4px;
+}
+
+.v {
+  margin: 0;
+  font-weight: 600;
+}
+
+.note {
+  margin-top: 12px;
+  border-left: 4px solid var(--accent);
+  padding: 10px 12px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+
+.note p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.section {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.section h2 {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  background: var(--chip);
+  border: 1px solid var(--line);
+  color: #374151;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 12px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+}
+
+thead th {
+  text-align: left;
+  padding: 12px 12px;
+  font-size: 12px;
+  color: #374151;
+  background: var(--soft);
+  border-bottom: 1px solid var(--line);
+  vertical-align: bottom;
+  letter-spacing: 0.2px;
+}
+
+tbody td {
+  padding: 12px 12px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.col-id {
+  width: 64px;
+}
+
+.col-rujukan {
+  width: 260px;
+}
+
+.col-artefak {
+  width: 320px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.tight {
+  line-height: 1.45;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-size: 12px;
+  color: #111827;
+  font-weight: 600;
+}
+
+ul {
+  margin: 8px 0 0 18px;
+  padding: 0;
+}
+
+li {
+  margin: 4px 0;
+}
+
+.quote {
+  margin-top: 8px;
+  padding: 10px 10px;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  background: #fff;
+  font-size: 13px;
+  color: #111827;
+}
+
+.quote .qk {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 0 0 6px;
+}
+
+.quote p {
+  margin: 0 0 6px;
+}
+
+.quote p:last-child {
+  margin: 0;
+}
+
+.footer {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hr {
+  height: 1px;
+  background: var(--line);
+  margin: 16px 0 0;
+}
+
+@media (max-width: 900px) {
+  .meta {
+    grid-template-columns: 1fr;
+  }
+  .col-rujukan,
+  .col-artefak {
+    width: auto;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+  .page {
+    margin: 0;
+    padding: 0;
+  }
+  .header,
+  table {
+    border-color: #d1d5db;
+  }
+  .chip {
+    background: #fff;
+  }
+}
+
+/* ===========================
+   ADD-ON: Branding + Navbar + Lists
+   (untuk markup header terbaru)
+   =========================== */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  padding: 6px;
+}
+
+/* Supaya area judul tetap rapih meski ada logo */
+.title-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* Navbar */
+.navbar {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.nav-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: #111827;
+  font-size: 13px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.nav-item:hover {
+  background: var(--soft);
+  border-color: var(--line);
+}
+
+.nav-item.active,
+.nav-item[aria-current="page"] {
+  background: var(--chip);
+  border-color: var(--line);
+  font-weight: 600;
+}
+
+/* List link sumber dokumen */
+.links {
+  margin-top: 8px;
+  display: grid;
+  gap: 6px;
+}
+
+.link-item {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  text-decoration: none;
+  color: #111827;
+  font-size: 13px;
+}
+
+.link-item:hover {
+  background: var(--soft);
+}
+
+.link-item:focus-visible,
+.nav-item:focus-visible {
+  outline: 2px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+/* List anggota tim */
+.people {
+  margin: 8px 0 0 18px;
+  padding: 0;
+}
+
+.people li {
+  margin: 4px 0;
+}
+
+/* Responsif: logo & chips turun baris dengan enak */
+@media (max-width: 900px) {
+  .brand {
+    order: 0;
+  }
+  .title-text {
+    order: 1;
+    width: 100%;
+  }
+  .chips {
+    order: 2;
+  }
+}
+
+/* Print: navbar & border tetap clean */
+@media print {
+  .navbar {
+    border-color: #d1d5db;
+  }
+  .nav-item {
+    border-color: #d1d5db;
+  }
+  .logo {
+    border-color: #d1d5db;
+  }
+}
+
+/* ===== ADDITIONS FOR risk-identification.html ===== */
+
+/* navbar */
+.navbar {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.nav-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #111827;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+.nav-item:hover {
+  background: var(--soft);
+  border-color: var(--line);
+}
+
+.nav-item.active,
+.nav-item[aria-current="page"] {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+/* links in meta box */
+.links {
+  margin-top: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.link-item {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 10px 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.link-item:hover {
+  background: var(--soft);
+}
+
+/* people list */
+.people {
+  margin: 8px 0 0 18px;
+  padding: 0;
+}
+
+.people li {
+  margin: 4px 0;
+}
+
+/* form table inputs: consistent & clean */
+input[type="text"],
+input[type="date"],
+textarea {
+  font: inherit;
+  color: var(--ink);
+  background: #fff;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.08);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 44px;
+}
+
+/* make radio/checkbox alignment nicer */
+input[type="checkbox"],
+input[type="radio"] {
+  transform: translateY(1px);
+}
+
+/* optional: make section spacing consistent when no chips */
+.section {
+  margin-top: 16px;
+}
+
+/* print-friendly: show urls and avoid dark nav blocks */
+@media print {
+  .navbar {
+    border-color: #d1d5db;
+    padding: 8px 10px;
+  }
+  .nav-item {
+    border-color: #d1d5db;
+    background: #fff !important;
+    color: #111827 !important;
+  }
+  .link-item {
+    color: #111827;
+    text-decoration: none;
+  }
+  .link-item::after {
+    content: " (" attr(href) ")";
+    font-weight: 400;
+    color: #6b7280;
+    font-size: 11px;
+    margin-left: 6px;
+  }
+}
+
+/* rapihin opsi radio/checkbox di dalam sel tabel */
+.choice-stack {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+}
+
+.choice-stack label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.choice-stack input[type="radio"],
+.choice-stack input[type="checkbox"] {
+  margin: 0;
+  transform: translateY(0); /* matiin geser 1px yang sebelumnya */
+}

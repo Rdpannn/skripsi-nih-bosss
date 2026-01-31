@@ -1,0 +1,1186 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Risk Identification – Verifikasi Ahli (SDN Duren Seribu 4)</title>
+
+    <!-- Pakai CSS yang sama -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="title">
+          <div class="brand">
+            <!-- Ganti src logo sesuai file kamu -->
+            <img class="logo" src="logoPerusahaan.jpeg" alt="Logo Perusahaan" />
+            <img class="logo" src="logo-pnj.png" alt="Logo Kampus" />
+          </div>
+
+          <div class="title-text">
+            <h1>DOKUMEN RISK IDENTIFICATION & VERIFIKASI AHLI</h1>
+            <p class="sub">
+              Halaman ini digunakan sebagai
+              <b>lembar verifikasi (observasi awal)</b> untuk memastikan
+              <b>prosedur kerja</b>, <b>risiko</b>, dan <b>zona kerja</b> yang
+              akan dimodelkan pada simulator sesuai kondisi lapangan dan
+              persetujuan pihak ahli/perusahaan.
+            </p>
+          </div>
+        </div>
+
+        <div class="meta" role="group" aria-label="Informasi dokumen">
+          <div class="box">
+            <p class="k">Sumber Dokumen</p>
+            <p class="v">Tautan Referensi Proyek</p>
+
+            <div class="links" role="list">
+              <a
+                role="listitem"
+                class="link-item"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1G9FwnyEJkFbFz7mydzoEPTL4_WdW1o7Q/view?usp=drive_link"
+              >
+                RKS SDN DUSER (PDF)
+              </a>
+              <a
+                role="listitem"
+                class="link-item"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1Wz4Fvy8zS8lSkaXWgT6oMiSByzwhUesd/view?usp=drive_link"
+              >
+                Gambar SDN DUSER (PDF)
+              </a>
+              <a
+                role="listitem"
+                class="link-item"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/drive/folders/1I7QjCRNgJfny9kZUkzRQ3tKjza5h6jrw?usp=drive_link"
+              >
+                Foto Dokumentasi Proyek (Folder)
+              </a>
+            </div>
+
+            <p class="k muted">
+              Form ini disusun berdasarkan dokumen proyek agar tiap item bisa
+              ditelusuri kembali saat sesi verifikasi.
+            </p>
+          </div>
+
+          <div class="box">
+            <p class="k">Tujuan</p>
+            <p class="v">
+              Verifikasi kandidat prosedur & risiko untuk pemodelan
+            </p>
+            <p class="k muted">
+              Mengonfirmasi: <b>zona kerja</b>, <b>langkah kerja</b>,
+              <b>prasyarat</b>, dan <b>risiko</b> agar skenario simulator valid
+              dan dapat dipertanggungjawabkan dalam skripsi.
+            </p>
+          </div>
+
+          <div class="box">
+            <p class="k">Dibuat oleh</p>
+            <p class="v">Tim Skripsi</p>
+            <ul class="people">
+              <li>RADIFAN AL FATH ISNANDAR bin Suhendi Iskandar</li>
+              <li>MUHAMAD ALFI NABIL bin Muchlis</li>
+              <li>NISHRINA KHOIRUNNISA binti Moch. Ikhsanul Muhadi</li>
+              <li>SHOFIYAH SALSABILA binti Muhammad Hawari</li>
+            </ul>
+            <p class="k muted">
+              Dokumen kerja internal penelitian untuk verifikasi lapangan
+              (observasi ahli).
+            </p>
+          </div>
+        </div>
+
+        <div class="note">
+          <p>
+            Catatan penggunaan: mohon pihak ahli menandai item yang
+            <b>sesuai</b>, mengoreksi yang <b>tidak sesuai</b>, serta
+            menambahkan informasi yang <b>belum tercakup</b>. Hasil verifikasi
+            ini akan menjadi dasar penetapan skenario final simulator dan
+            dokumen risk identification.
+          </p>
+        </div>
+
+        <nav class="navbar" aria-label="Navigasi dokumen">
+          <a class="nav-item" href="index.html">Data Eksisting</a>
+          <a
+            class="nav-item active"
+            href="risk-identification.html"
+            aria-current="page"
+            >Dokumen Risk Identification</a
+          >
+          <a class="nav-item" href="modeling.html"
+            >Modeling Prosedur & Risiko Spasial</a
+          >
+        </nav>
+      </div>
+
+      <div class="section">
+        <h2>B) Form Verifikasi Prosedur, Zona, dan Risiko</h2>
+      </div>
+
+      <!-- ===== FORM VERIFIKASI ===== -->
+      <form class="form" action="#" method="post">
+        <!-- Identitas sesi -->
+        <table role="table" aria-label="Informasi sesi verifikasi">
+          <thead>
+            <tr>
+              <th colspan="4">Informasi Sesi Verifikasi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tight">
+                <b>Tanggal</b><br /><span class="muted"
+                  >Isi tanggal observasi</span
+                >
+              </td>
+              <td class="tight">
+                <label class="muted" for="tanggal">Tanggal</label><br />
+                <input
+                  id="tanggal"
+                  name="tanggal"
+                  type="date"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                />
+              </td>
+              <td class="tight">
+                <b>Narasumber/Ahli</b><br /><span class="muted"
+                  >Nama & jabatan</span
+                >
+              </td>
+              <td class="tight">
+                <label class="muted" for="narasumber">Nama & Jabatan</label
+                ><br />
+                <input
+                  id="narasumber"
+                  name="narasumber"
+                  type="text"
+                  placeholder="Contoh: Pengawas Teknis / Site Manager / Ahli K3"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="tight">
+                <b>Lokasi Observasi</b><br /><span class="muted"
+                  >Tempat verifikasi</span
+                >
+              </td>
+              <td class="tight" colspan="3">
+                <label class="muted" for="lokasi">Lokasi</label><br />
+                <input
+                  id="lokasi"
+                  name="lokasi"
+                  type="text"
+                  placeholder="Contoh: SDN Duren Seribu 4 / Kantor / Area proyek"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- 1) Kandidat zona -->
+        <table role="table" aria-label="Verifikasi zona kerja (spasial)">
+          <thead>
+            <tr>
+              <th class="col-id">Kode</th>
+              <th>Zona/Area Kerja yang Akan Dimodelkan (Spasial)</th>
+              <th>Hasil Verifikasi Ahli</th>
+              <th>Catatan/Koreksi (bila ada)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-id"><span class="badge">Z1</span></td>
+              <td class="tight">
+                <b>Zona Ruang Kelas / Area Dalam Gedung</b>
+                <div class="muted">
+                  Kandidat zona dari gambar/site plan (ruang-ruang utama). Mohon
+                  konfirmasi apakah area ini masuk cakupan renovasi & simulasi.
+                </div>
+              </td>
+              <td class="tight">
+                <label
+                  ><input type="radio" name="z1" value="sesuai" /> Sesuai</label
+                ><br />
+                <label
+                  ><input type="radio" name="z1" value="tidak_sesuai" /> Tidak
+                  sesuai</label
+                ><br />
+                <label
+                  ><input type="radio" name="z1" value="sebagian" />
+                  Sebagian</label
+                >
+              </td>
+              <td class="tight">
+                <textarea
+                  name="z1_catatan"
+                  rows="3"
+                  placeholder="Contoh: hanya kelas tertentu; area tidak dipakai saat renovasi; pembatasan akses; jam kerja."
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                ></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-id"><span class="badge">Z2</span></td>
+              <td class="tight">
+                <b>Zona Koridor / Sirkulasi / Akses Sempit</b>
+                <div class="muted">
+                  Untuk memodelkan keterbatasan akses (pergerakan
+                  pekerja/material) dan potensi konflik aktivitas.
+                </div>
+              </td>
+              <td class="tight">
+                <label
+                  ><input type="radio" name="z2" value="sesuai" /> Sesuai</label
+                ><br />
+                <label
+                  ><input type="radio" name="z2" value="tidak_sesuai" /> Tidak
+                  sesuai</label
+                ><br />
+                <label
+                  ><input type="radio" name="z2" value="sebagian" />
+                  Sebagian</label
+                >
+              </td>
+              <td class="tight">
+                <textarea
+                  name="z2_catatan"
+                  rows="3"
+                  placeholder="Contoh: koridor dipakai jalur material; ada pembatas/pagar proyek; titik rawan macet."
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                ></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-id"><span class="badge">Z3</span></td>
+              <td class="tight">
+                <b>Zona Atap / Pekerjaan di Ketinggian</b>
+                <div class="muted">
+                  Untuk memodelkan risiko kerja pada area atas/overhead serta
+                  pengamanan area kerja.
+                </div>
+              </td>
+              <td class="tight">
+                <label
+                  ><input type="radio" name="z3" value="sesuai" /> Sesuai</label
+                ><br />
+                <label
+                  ><input type="radio" name="z3" value="tidak_sesuai" /> Tidak
+                  sesuai</label
+                ><br />
+                <label
+                  ><input type="radio" name="z3" value="sebagian" />
+                  Sebagian</label
+                >
+              </td>
+              <td class="tight">
+                <textarea
+                  name="z3_catatan"
+                  rows="3"
+                  placeholder="Contoh: akses atap via tangga tertentu; butuh pengamanan; area terlarang saat jam sekolah."
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                ></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-id"><span class="badge">Z4</span></td>
+              <td class="tight">
+                <b>Zona Area Luar / Halaman / Loading Material</b>
+                <div class="muted">
+                  Untuk memodelkan pergerakan material, penumpukan sementara,
+                  dan akses keluar-masuk.
+                </div>
+              </td>
+              <td class="tight">
+                <label
+                  ><input type="radio" name="z4" value="sesuai" /> Sesuai</label
+                ><br />
+                <label
+                  ><input type="radio" name="z4" value="tidak_sesuai" /> Tidak
+                  sesuai</label
+                ><br />
+                <label
+                  ><input type="radio" name="z4" value="sebagian" />
+                  Sebagian</label
+                >
+              </td>
+              <td class="tight">
+                <textarea
+                  name="z4_catatan"
+                  rows="3"
+                  placeholder="Contoh: lokasi bongkar muat; jalur truk; pembatasan jam; titik penumpukan."
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                ></textarea>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- 2) Kandidat risiko spasial -->
+        <table role="table" aria-label="Kandidat risiko spasial">
+          <thead>
+            <tr>
+              <th class="col-id">Kode</th>
+              <th>Risiko Spasial yang Akan Dimodelkan</th>
+              <th>Checklist Verifikasi</th>
+              <th>Catatan Ahli (contoh kasus/penyesuaian)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-id"><span class="badge">SR1</span></td>
+              <td class="tight">
+                <b>Konflik aktivitas pada ruang terbatas</b>
+                <div class="muted">
+                  Dua pekerjaan berjalan paralel pada zona yang sama/berdekatan
+                  sehingga mengganggu keselamatan atau kelancaran kerja.
+                </div>
+              </td>
+              <td class="tight">
+                <label
+                  ><input type="checkbox" name="sr1_valid" /> Relevan untuk
+                  proyek ini</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="sr1_prioritas" /> Prioritas
+                  tinggi untuk dimodelkan</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="sr1_data" /> Data/kejadian
+                  pernah terjadi</label
+                >
+              </td>
+              <td class="tight">
+                <textarea
+                  name="sr1_catatan"
+                  rows="3"
+                  placeholder="Contoh: konflik bongkaran vs jalur material; pekerjaan atap vs aktivitas di bawah."
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                ></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-id"><span class="badge">SR2</span></td>
+              <td class="tight">
+                <b>Akses sempit / bottleneck pergerakan</b>
+                <div class="muted">
+                  Risiko akibat koridor sempit, jalur material, atau perubahan
+                  akses karena pagar proyek/pembatas.
+                </div>
+              </td>
+              <td class="tight">
+                <label><input type="checkbox" name="sr2_valid" /> Relevan</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="sr2_prioritas" /> Prioritas
+                  tinggi</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="sr2_data" /> Ada contoh
+                  nyata</label
+                >
+              </td>
+              <td class="tight">
+                <textarea
+                  name="sr2_catatan"
+                  rows="3"
+                  placeholder="Contoh: jalur sempit saat bongkar muat; pertemuan arus pekerja; titik rawan tersandung."
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                ></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-id"><span class="badge">SR3</span></td>
+              <td class="tight">
+                <b>Pekerjaan di ketinggian / overhead</b>
+                <div class="muted">
+                  Risiko jatuh, benda jatuh, atau area di bawah pekerjaan
+                  ketinggian yang harus diamankan.
+                </div>
+              </td>
+              <td class="tight">
+                <label><input type="checkbox" name="sr3_valid" /> Relevan</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="sr3_prioritas" /> Prioritas
+                  tinggi</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="sr3_data" /> Pernah ada
+                  kejadian/near-miss</label
+                >
+              </td>
+              <td class="tight">
+                <textarea
+                  name="sr3_catatan"
+                  rows="3"
+                  placeholder="Contoh: area atap; pembatasan akses di bawah; prosedur pengamanan yang wajib."
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                ></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-id"><span class="badge">SR4</span></td>
+              <td class="tight">
+                <b>Penumpukan material/puing pada lokasi sementara</b>
+                <div class="muted">
+                  Risiko akibat puing/material ditumpuk dekat akses, ruang
+                  kerja, atau area yang semestinya steril.
+                </div>
+              </td>
+              <td class="tight">
+                <label><input type="checkbox" name="sr4_valid" /> Relevan</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="sr4_prioritas" /> Prioritas
+                  tinggi</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="sr4_data" /> Ada contoh
+                  nyata</label
+                >
+              </td>
+              <td class="tight">
+                <textarea
+                  name="sr4_catatan"
+                  rows="3"
+                  placeholder="Contoh: lokasi penumpukan puing saat bongkaran; jalur pengangkutan; aturan lokasi aman."
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                ></textarea>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- 3) Kandidat prosedur & kesalahan prosedural -->
+        <table
+          role="table"
+          aria-label="Kandidat prosedur dan kesalahan prosedural"
+        >
+          <thead>
+            <tr>
+              <th class="col-id">Kode</th>
+              <th>Prosedur yang Akan Dimodelkan (berdasarkan dokumen)</th>
+              <th>Potensi Kesalahan Prosedural yang Dimodelkan</th>
+              <th>Verifikasi Ahli</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-id"><span class="badge">PR1</span></td>
+              <td class="tight">
+                <b>Pembersihan lokasi (Pekerjaan Pendahuluan)</b>
+                <div class="muted">
+                  Pembersihan lokasi dari barang hidup/mati sesuai petunjuk
+                  direksi/pengguna, termasuk pemeliharaan jalan/jembatan
+                  sementara dan perbaikan kerusakan akibat pekerjaan.
+                </div>
+              </td>
+              <td class="tight">
+                <ul>
+                  <li>Mulai bekerja tanpa pembersihan/pengamanan area.</li>
+                  <li>
+                    Tidak memulihkan/ membersihkan kembali jalan sementara saat
+                    selesai.
+                  </li>
+                  <li>Kerusakan akses/jembatan sementara dibiarkan.</li>
+                </ul>
+              </td>
+              <td class="tight">
+                <label
+                  ><input type="radio" name="pr1" value="valid" /> Valid
+                  (dimodelkan)</label
+                ><br />
+                <label
+                  ><input type="radio" name="pr1" value="tidak_valid" /> Tidak
+                  prioritas</label
+                ><br />
+                <label
+                  ><input type="radio" name="pr1" value="revisi" /> Perlu
+                  revisi</label
+                >
+                <div style="height: 8px"></div>
+                <textarea
+                  name="pr1_catatan"
+                  rows="3"
+                  placeholder="Catatan ahli: langkah yang benar, urutan, atau prasyarat tambahan."
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                ></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-id"><span class="badge">PR2</span></td>
+              <td class="tight">
+                <b>Pembongkaran (prasyarat izin & rencana pembongkaran)</b>
+                <div class="muted">
+                  Sebelum bongkaran harus ada persetujuan pemberi tugas, izin
+                  pemakaian jalan, lokasi pembuangan puing, dll. Kontraktor juga
+                  wajib membuat usulan rencana pembongkaran (metode, waktu
+                  angkut puing, lokasi pembuangan, pengamanan instalasi ME,
+                  jangka waktu, dll).
+                </div>
+              </td>
+              <td class="tight">
+                <ul>
+                  <li>Bongkaran dilakukan tanpa persetujuan/izin.</li>
+                  <li>Tidak ada rencana bongkaran (metode/waktu/lokasi).</li>
+                  <li>Tidak ada pengamanan instalasi ME.</li>
+                  <li>Puing diangkut/ditumpuk tanpa aturan lokasi & waktu.</li>
+                </ul>
+              </td>
+              <td class="tight">
+                <label
+                  ><input type="radio" name="pr2" value="valid" /> Valid</label
+                ><br />
+                <label
+                  ><input type="radio" name="pr2" value="tidak_valid" /> Tidak
+                  prioritas</label
+                ><br />
+                <label
+                  ><input type="radio" name="pr2" value="revisi" /> Perlu
+                  revisi</label
+                >
+                <div style="height: 8px"></div>
+                <textarea
+                  name="pr2_catatan"
+                  rows="3"
+                  placeholder="Catatan ahli: izin apa saja yang benar-benar dipakai, format rencana bongkaran, dan alur persetujuannya."
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                ></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-id"><span class="badge">PR3</span></td>
+              <td class="tight">
+                <b>Pencatatan pekerjaan harian (BHL) & dokumentasi proyek</b>
+                <div class="muted">
+                  BHL berisi: cuaca, pemasukan bahan, pekerjaan dilaksanakan,
+                  jumlah tenaga kerja, catatan kejadian, serta
+                  instruksi/pengarahan/peringatan. Ada juga laporan
+                  mingguan/bulanan dan foto tahapan dengan titik pandang tetap.
+                </div>
+              </td>
+              <td class="tight">
+                <ul>
+                  <li>BHL tidak diisi harian / tidak lengkap.</li>
+                  <li>Instruksi/pengarahan tidak tercatat.</li>
+                  <li>
+                    Dokumentasi foto tidak konsisten (titik pandang berubah /
+                    tanpa keterangan).
+                  </li>
+                </ul>
+              </td>
+              <td class="tight">
+                <label
+                  ><input type="radio" name="pr3" value="valid" /> Valid</label
+                ><br />
+                <label
+                  ><input type="radio" name="pr3" value="tidak_valid" /> Tidak
+                  prioritas</label
+                ><br />
+                <label
+                  ><input type="radio" name="pr3" value="revisi" /> Perlu
+                  revisi</label
+                >
+                <div style="height: 8px"></div>
+                <textarea
+                  name="pr3_catatan"
+                  rows="3"
+                  placeholder="Catatan ahli: format BHL yang dipakai, siapa mengisi/mengecek, dan apakah masih tersedia arsipnya."
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                ></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-id"><span class="badge">PR4</span></td>
+              <td class="tight">
+                <b
+                  >Gudang bahan & Direksi Keet (penempatan sesuai
+                  persetujuan)</b
+                >
+                <div class="muted">
+                  Gudang dibuat agar bahan terlindung cuaca dan aman. Direksi
+                  keet dibuat sesuai luas dan penempatannya mengikuti petunjuk
+                  pengawas teknis serta persetujuan pengguna anggaran.
+                </div>
+              </td>
+              <td class="tight">
+                <ul>
+                  <li>Gudang tidak aman / bahan terpapar cuaca.</li>
+                  <li>Direksi keet ditempatkan tanpa persetujuan/petunjuk.</li>
+                  <li>Layout zona kerja aktual berbeda dari rencana.</li>
+                </ul>
+              </td>
+              <td class="tight">
+                <label
+                  ><input type="radio" name="pr4" value="valid" /> Valid</label
+                ><br />
+                <label
+                  ><input type="radio" name="pr4" value="tidak_valid" /> Tidak
+                  prioritas</label
+                ><br />
+                <label
+                  ><input type="radio" name="pr4" value="revisi" /> Perlu
+                  revisi</label
+                >
+                <div style="height: 8px"></div>
+                <textarea
+                  name="pr4_catatan"
+                  rows="3"
+                  placeholder="Catatan ahli: lokasi gudang/direksi keet aktual, pembatasan akses, dan dampaknya ke pergerakan material."
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                ></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-id"><span class="badge">PR5</span></td>
+              <td class="tight">
+                <b>K3/SMKK (RKK, APD, P3K, rambu, APAR, dll)</b>
+                <div class="muted">
+                  Komponen dukungan keselamatan: dokumen RKK & formulir, safety
+                  induction, papan informasi K3, APD, fasilitas P3K, rambu
+                  proyek, APAR, bendera K3.
+                </div>
+              </td>
+              <td class="tight">
+                <ul>
+                  <li>Masuk zona kerja tanpa APD.</li>
+                  <li>Safety induction tidak dilakukan / tidak ada bukti.</li>
+                  <li>
+                    Kontrol K3 (rambu/APAR/P3K) tidak tersedia/ tidak sesuai.
+                  </li>
+                </ul>
+              </td>
+              <td class="tight">
+                <label
+                  ><input type="radio" name="pr5" value="valid" /> Valid</label
+                ><br />
+                <label
+                  ><input type="radio" name="pr5" value="tidak_valid" /> Tidak
+                  prioritas</label
+                ><br />
+                <label
+                  ><input type="radio" name="pr5" value="revisi" /> Perlu
+                  revisi</label
+                >
+                <div style="height: 8px"></div>
+                <textarea
+                  name="pr5_catatan"
+                  rows="3"
+                  placeholder="Catatan ahli: APD wajib apa saja, kontrol K3 yang benar-benar dipakai, dan aturan masuk area kerja."
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                ></textarea>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- 4) Data yang diminta / belum tersedia -->
+        <table
+          role="table"
+          aria-label="Permintaan data tambahan untuk penguatan skripsi"
+        >
+          <thead>
+            <tr>
+              <th class="col-id">Kode</th>
+              <th>Data/Artefak Tambahan yang Perlu Diminta</th>
+              <th>Prioritas</th>
+              <th>Status Ketersediaan (di pihak perusahaan)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-id"><span class="badge">D1</span></td>
+              <td class="tight">
+                <b>Buku Harian Lapangan (BHL)</b> (scan/foto)
+                <div class="muted">
+                  Untuk event nyata: cuaca, bahan, pekerjaan, tenaga kerja,
+                  catatan kejadian, instruksi/pengarahan.
+                </div>
+              </td>
+              <td class="tight">
+                <div
+                  class="choice-stack"
+                  role="group"
+                  aria-label="Prioritas D1"
+                >
+                  <label
+                    ><input type="radio" name="d1_prio" value="tinggi" />
+                    Tinggi</label
+                  >
+                  <label
+                    ><input type="radio" name="d1_prio" value="sedang" />
+                    Sedang</label
+                  >
+                  <label
+                    ><input type="radio" name="d1_prio" value="rendah" />
+                    Rendah</label
+                  >
+                </div>
+              </td>
+              <td class="tight">
+                <label><input type="checkbox" name="d1_ada" /> Tersedia</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="d1_tidak" /> Tidak
+                  tersedia</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="d1_perlu" /> Perlu
+                  dicari/diarsip</label
+                >
+                <div style="height: 8px"></div>
+                <input
+                  type="text"
+                  name="d1_ket"
+                  placeholder="Keterangan singkat (mis: lokasi arsip, PIC, periode tanggal)"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-id"><span class="badge">D2</span></td>
+              <td class="tight">
+                <b>Laporan Mingguan & Bulanan</b>
+                <div class="muted">
+                  Untuk pembuktian progres, deviasi, dan hal penting proyek.
+                </div>
+              </td>
+              <td class="tight">
+                <label
+                  ><input type="radio" name="d2_prio" value="tinggi" />
+                  Tinggi</label
+                ><br />
+                <label
+                  ><input type="radio" name="d2_prio" value="sedang" />
+                  Sedang</label
+                ><br />
+                <label
+                  ><input type="radio" name="d2_prio" value="rendah" />
+                  Rendah</label
+                >
+              </td>
+              <td class="tight">
+                <label><input type="checkbox" name="d2_ada" /> Tersedia</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="d2_tidak" /> Tidak
+                  tersedia</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="d2_perlu" /> Perlu
+                  dicari/diarsip</label
+                >
+                <div style="height: 8px"></div>
+                <input
+                  type="text"
+                  name="d2_ket"
+                  placeholder="Keterangan singkat"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-id"><span class="badge">D3</span></td>
+              <td class="tight">
+                <b>Album foto proyek per tahapan</b>
+                <div class="muted">
+                  Untuk bukti visual tahapan, titik pandang konsisten, dan
+                  penelusuran kronologi.
+                </div>
+              </td>
+              <td class="tight">
+                <label
+                  ><input type="radio" name="d3_prio" value="tinggi" />
+                  Tinggi</label
+                ><br />
+                <label
+                  ><input type="radio" name="d3_prio" value="sedang" />
+                  Sedang</label
+                ><br />
+                <label
+                  ><input type="radio" name="d3_prio" value="rendah" />
+                  Rendah</label
+                >
+              </td>
+              <td class="tight">
+                <label><input type="checkbox" name="d3_ada" /> Tersedia</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="d3_tidak" /> Tidak
+                  tersedia</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="d3_perlu" /> Perlu
+                  dicari/diarsip</label
+                >
+                <div style="height: 8px"></div>
+                <input
+                  type="text"
+                  name="d3_ket"
+                  placeholder="Keterangan singkat"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-id"><span class="badge">D4</span></td>
+              <td class="tight">
+                <b>Time schedule + Kurva S</b> (rencana vs realisasi bila ada)
+                <div class="muted">
+                  Untuk baseline urutan kerja (sequence) dan deteksi deviasi
+                  urutan.
+                </div>
+              </td>
+              <td class="tight">
+                <label
+                  ><input type="radio" name="d4_prio" value="tinggi" />
+                  Tinggi</label
+                ><br />
+                <label
+                  ><input type="radio" name="d4_prio" value="sedang" />
+                  Sedang</label
+                ><br />
+                <label
+                  ><input type="radio" name="d4_prio" value="rendah" />
+                  Rendah</label
+                >
+              </td>
+              <td class="tight">
+                <label><input type="checkbox" name="d4_ada" /> Tersedia</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="d4_tidak" /> Tidak
+                  tersedia</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="d4_perlu" /> Perlu
+                  dicari/diarsip</label
+                >
+                <div style="height: 8px"></div>
+                <input
+                  type="text"
+                  name="d4_ket"
+                  placeholder="Keterangan singkat"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-id"><span class="badge">D5</span></td>
+              <td class="tight">
+                <b>As-built drawing + berita acara pengetesan/serah terima</b>
+                <div class="muted">
+                  Untuk memastikan kondisi aktual dan jejak perubahan (ideal vs
+                  aktual).
+                </div>
+              </td>
+              <td class="tight">
+                <label
+                  ><input type="radio" name="d5_prio" value="tinggi" />
+                  Tinggi</label
+                ><br />
+                <label
+                  ><input type="radio" name="d5_prio" value="sedang" />
+                  Sedang</label
+                ><br />
+                <label
+                  ><input type="radio" name="d5_prio" value="rendah" />
+                  Rendah</label
+                >
+              </td>
+              <td class="tight">
+                <label><input type="checkbox" name="d5_ada" /> Tersedia</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="d5_tidak" /> Tidak
+                  tersedia</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="d5_perlu" /> Perlu
+                  dicari/diarsip</label
+                >
+                <div style="height: 8px"></div>
+                <input
+                  type="text"
+                  name="d5_ket"
+                  placeholder="Keterangan singkat"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-id"><span class="badge">D6</span></td>
+              <td class="tight">
+                <b>Dokumen RKK (Rencana Keselamatan Konstruksi) & bukti K3</b>
+                <div class="muted">
+                  Contoh: daftar hadir safety induction, checklist inspeksi,
+                  toolbox meeting, catatan temuan/teguran K3, near-miss/insiden
+                  (bila ada).
+                </div>
+              </td>
+              <td class="tight">
+                <label
+                  ><input type="radio" name="d6_prio" value="tinggi" />
+                  Tinggi</label
+                ><br />
+                <label
+                  ><input type="radio" name="d6_prio" value="sedang" />
+                  Sedang</label
+                ><br />
+                <label
+                  ><input type="radio" name="d6_prio" value="rendah" />
+                  Rendah</label
+                >
+              </td>
+              <td class="tight">
+                <label><input type="checkbox" name="d6_ada" /> Tersedia</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="d6_tidak" /> Tidak
+                  tersedia</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="d6_perlu" /> Perlu
+                  dicari/diarsip</label
+                >
+                <div style="height: 8px"></div>
+                <input
+                  type="text"
+                  name="d6_ket"
+                  placeholder="Keterangan singkat"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Ringkasan hasil & persetujuan -->
+        <table role="table" aria-label="Ringkasan hasil verifikasi">
+          <thead>
+            <tr>
+              <th colspan="4">Ringkasan & Persetujuan Ahli</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tight" style="width: 260px">
+                <b>Kesimpulan Ahli</b><br />
+                <span class="muted"
+                  >Apakah kandidat pemodelan sudah tepat?</span
+                >
+              </td>
+              <td class="tight">
+                <label
+                  ><input type="radio" name="kesimpulan" value="setuju" />
+                  Setuju</label
+                ><br />
+                <label
+                  ><input
+                    type="radio"
+                    name="kesimpulan"
+                    value="setuju_dengan_revisi"
+                  />
+                  Setuju dengan revisi</label
+                ><br />
+                <label
+                  ><input type="radio" name="kesimpulan" value="tidak_setuju" />
+                  Tidak setuju</label
+                >
+              </td>
+              <td class="tight" style="width: 260px">
+                <b>Catatan Revisi Utama</b><br />
+                <span class="muted">Poin koreksi paling penting</span>
+              </td>
+              <td class="tight">
+                <textarea
+                  name="revisi_utama"
+                  rows="4"
+                  placeholder="Tuliskan koreksi utama (zona, prosedur, risiko, prasyarat, urutan kerja, batasan akses, dsb.)"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                ></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="tight">
+                <b>Nama & Tanda Tangan</b><br />
+                <span class="muted"
+                  >Jika diperlukan untuk bukti verifikasi</span
+                >
+              </td>
+              <td class="tight" colspan="3">
+                <input
+                  type="text"
+                  name="ttd"
+                  placeholder="Nama jelas (opsional) — tanda tangan dilakukan manual pada versi cetak"
+                  style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid var(--line);
+                    border-radius: 10px;
+                  "
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+
+      <div class="hr"></div>
+      <div class="footer">
+        <div>
+          <b>Dokumen:</b> Risk Identification – Verifikasi Ahli (Versi Kerja)
+        </div>
+        <div class="muted">
+          Catatan: halaman ini dibuat untuk memfasilitasi verifikasi sebelum
+          skenario simulator diputuskan pada halaman
+          <i>Modeling Prosedur & Risiko Spasial</i>.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
